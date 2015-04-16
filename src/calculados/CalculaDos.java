@@ -30,11 +30,14 @@ public class CalculaDos {
         }else if(operacion.equals("/")){
             contenedor.setOperacion(operacion);
         }
+        
+        realizaOperacion(contenedor);
+        Vista.imprimir(contenedor);
     }
 
     
-    public void realizaOperacion(Modelo contenedor){
-        float resultado = contenedor.resultado;
+    public static void realizaOperacion(Modelo contenedor){
+        float resultado = 0;
         switch(contenedor.getOperacion()){
             case "+": 
                  resultado = contenedor.getNum1()+contenedor.getNum2();
@@ -49,6 +52,7 @@ public class CalculaDos {
                  resultado = contenedor.getNum1()/contenedor.getNum2();
             break;
         }
+        contenedor.setResultado(resultado);
     }
     
     }

@@ -5,10 +5,14 @@
  */
 package calculados;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Patripon
  */
 public class Vista {
-    
+    public static void imprimir(Modelo contenedor){
+        JOptionPane.showMessageDialog(null,contenedor.getResultado() );
+    }
 }
