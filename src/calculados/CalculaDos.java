@@ -30,7 +30,7 @@ public class CalculaDos {
         }else if(operacion.equals("/")){
             contenedor.setOperacion(operacion);
         }
-        
+
         realizaOperacion(contenedor);
         Vista.imprimir(contenedor);
     }
